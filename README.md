@@ -1,16 +1,13 @@
-# Welcome to your Lovable project
+# Welcome to HFC project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/e0387227-5ee6-47bc-bb9d-83c5fb700522
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e0387227-5ee6-47bc-bb9d-83c5fb700522) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 

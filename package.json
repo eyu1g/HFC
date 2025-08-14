@@ -1,18 +1,18 @@
 {
   "name": "vite_react_shadcn_ts",
   "private": true,
-  "homepage": "https://eyu1g.github.io/HFC",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "start": "vite",
+    "build": "vite build --base=/HFC/",
+    "build:dev": "vite build --mode development --base=/HFC/",
     "lint": "eslint .",
     "preview": "vite preview",
+    "postbuild": "cp dist/index.html dist/404.html",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d dist"
-
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

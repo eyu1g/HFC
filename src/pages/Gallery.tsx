@@ -3,7 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Eye, ChevronLeft, ChevronRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-
+import dev from "@/assets/dev1.jpg";
+import dev1 from "@/assets/dev2.jpg";
+import emp from "@/assets/emp1.jpg";
+import emp1 from "@/assets/emp2.jpg";
+import founderImage4 from "@/assets/Zelalem .jpg";
+import founderImage5 from "@/assets/TsedalEndrias.jpg";
 const Gallery = () => {
   const galleryAlbums = [
     {
@@ -15,7 +20,7 @@ const Gallery = () => {
           title: "Group Home Activities",
           location: "Addis Ababa, Ethiopia",
           date: "March 2024",
-          image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop",
+          image: dev,
           description: "Children in our group homes participating in educational activities and playtime."
         },
         {
@@ -23,7 +28,7 @@ const Gallery = () => {
           title: "Educational Support Program",
           location: "Addis Ababa, Ethiopia", 
           date: "February 2024",
-          image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+          image: dev1,
           description: "Children receiving educational support and tutoring assistance."
         },
         {
@@ -61,7 +66,7 @@ const Gallery = () => {
           title: "Village Saving and Loan Program",
           location: "Oromia, Ethiopia",
           date: "March 2024",
-          image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop",
+          image: emp,
           description: "Women participating in VSLA training and economic empowerment activities."
         },
         {
@@ -69,7 +74,7 @@ const Gallery = () => {
           title: "Skills Training Workshop",
           location: "Addis Ababa, Ethiopia",
           date: "February 2024",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+          image:emp1,
           description: "Community members learning new vocational skills for income generation."
         },
         {

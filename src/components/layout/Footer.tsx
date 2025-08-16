@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import hopeLogo from "@/assets/hopelogo.jpg";
 
 const Footer = () => {
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
           {/* Logo and Mission */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <Heart className="w-6 h-6 text-secondary-foreground" />
+              <div className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center p-1">
+                <img src={hopeLogo} alt="HFC Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-bold text-xl">HFC Foundation</span>
             </div>

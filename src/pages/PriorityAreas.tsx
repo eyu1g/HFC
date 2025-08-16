@@ -1,12 +1,12 @@
 import Layout from "@/components/layout/Layout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Heart, Users, Scale, Shield, Zap, TreePine, Activity, ArrowRight } from "lucide-react";
+import { Baby, Building2, Shield, Users, Zap, TreePine, Activity, ArrowRight, Heart } from "lucide-react";
 
 const PriorityAreas = () => {
   const priorityAreas = [
     {
-      icon: Heart,
+      icon: Baby,
       title: "Human Development - Child and Youth Development",
       subtitle: "Health, Education, and Nutrition",
       description: "Supporting vulnerable children and youth affected by HIV/AIDS through comprehensive care, education, and psychosocial support.",
@@ -21,7 +21,7 @@ const PriorityAreas = () => {
       ]
     },
     {
-      icon: Users,
+      icon: Building2,
       title: "Community Empowerment Livelihoods",
       subtitle: "Economic Empowerment",
       description: "Empowering vulnerable communities through Village Savings and Loan Associations and economic strengthening initiatives.",
@@ -36,7 +36,7 @@ const PriorityAreas = () => {
       ]
     },
     {
-      icon: Scale,
+      icon: Shield,
       title: "Good Governance and Human Rights and Civic Engagement",
       subtitle: "Democratic Governance",
       description: "Strengthening democratic governance through social accountability, civic engagement, and human rights protection.",
@@ -51,7 +51,7 @@ const PriorityAreas = () => {
       ]
     },
     {
-      icon: Shield,
+      icon: Users,
       title: "Social Cohesion and Community Resilience",
       subtitle: "Community Strengthening",
       description: "Building peaceful, unified communities through conflict resolution, national unity promotion, and social integration.",
@@ -136,8 +136,8 @@ const PriorityAreas = () => {
                 <Card key={index} className="shadow-medium hover:shadow-strong transition-all">
                   <CardHeader>
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                        <area.icon className="w-6 h-6 text-primary-foreground" />
+                      <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#F2AA77' }}>
+                        <area.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <CardTitle className="text-2xl text-foreground">{area.title}</CardTitle>
@@ -179,7 +179,9 @@ const PriorityAreas = () => {
                 <AccordionItem key={index} value={`item-${index}`} className="bg-background rounded-lg px-6">
                   <AccordionTrigger className="text-left hover:no-underline">
                     <div className="flex items-center space-x-3">
-                      <area.icon className="w-5 h-5 text-primary" />
+                      <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#F2AA77' }}>
+                        <area.icon className="w-4 h-4 text-white" />
+                      </div>
                       <span className="font-semibold text-foreground">{area.title}</span>
                     </div>
                   </AccordionTrigger>

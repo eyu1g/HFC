@@ -18,24 +18,24 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 28% 17%;
 
-    /* Primary: Deep Ocean Blue - Trust & Stability */
+    /* Primary: Dark Blue - Trust & Stability */
     --primary: 210 100% 15%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 210 85% 25%;
+    --primary-light: 210 90% 25%;
     --primary-glow: 210 100% 35%;
 
-    /* Secondary: Warm Sunset Orange - Hope & Engagement */
-    --secondary: 25 90% 55%;
+    /* Secondary: Orange - Hope & Engagement */
+    --secondary: 25 89% 64%;
     --secondary-foreground: 0 0% 98%;
-    --secondary-light: 25 85% 65%;
+    --secondary-light: 25 79% 74%;
 
     /* Supporting Colors */
-    --muted: 210 20% 96%;
+    --muted: 200 20% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 160 60% 45%;
+    --accent: 175 67% 35%;
     --accent-foreground: 0 0% 98%;
-    --accent-light: 160 50% 55%;
+    --accent-light: 175 57% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
@@ -45,9 +45,9 @@ All colors MUST be HSL.
     --ring: 210 100% 15%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--accent)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
 
     /* Shadows */
@@ -125,5 +125,46 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  .animation-delay-800 {
+    animation-delay: 0.8s;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animation-delay-1200 {
+    animation-delay: 1.2s;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
